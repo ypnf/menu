@@ -6,54 +6,75 @@
       <meta charset="utf-8">
    </head>
    <body>
-      <header class="header">
-         <input class="header__button header__burger" type="image" src="icons/burger.svg" alt="закрыть меню">
-         <a class="header__group" href="#">
-            <img src="icons/Group.svg" alt="логотип CPS">
+   <aside class="aside-menu">
+      <div class="aside-menu__header">
+         <button class="aside-menu__header-button aside-menu__close">
+            <img class="aside-menu__close-image" src="icons/burger.svg" alt="закрыть меню">
+         </button>
+         <a class="aside-menu__logo" href="#">
+            <img  class="aside-menu__logo-image" src="icons/Group.svg" alt="логотип CPS">
          </a>
-         <input class="header__button" type="image" src="icons/search.svg" alt="поиск">
-      </header>
-      <nav>
-         <ul class="navigation">
-            <li class="navigation__item navigation__item--active"><a class="navigation__link navigation__link--active" href="#">Ремонт техники</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Услуги и сервисы</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Корпоративным клиентам</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Продавцам техники</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Партнерам</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Производителям</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Наши сервисные центры</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+         <button class="aside-menu__header-button aside-menu__search">
+            <img class="aside-menu__search-image" src="icons/search.svg" alt="поиск">
+         </button>
+      </div>
+      <nav class="aside-menu__navigation">
+         <ul class="aside-menu__navigation-list">
+            <li class="aside-menu__navigation-item aside-menu__navigation-item--active"><a class="aside-menu__navigation-link aside-menu__navigation-link--active" href="#">Ремонт техники</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Услуги и сервисы</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Корпоративным клиентам</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Продавцам техники</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Партнерам</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Производителям</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Наши сервисные центры</a></li>
+            <li class="aside-menu__navigation-item"><a class="aside-menu__navigation-link" href="#">Контакты</a></li>
          </ul>
       </nav>
-      <footer class="footer">
-         <ul class="footer__icon-list">
-            <li class="footer__icon-item">
-               <input class="footer__button" type="image" src="icons/chat copy.svg" alt="заказать звонок">
+      <div class="aside-menu__footer">
+         <ul class="aside-menu__footer-list">
+            <li class="aside-menu__footer-item">
+               <button class="aside-menu__footer-button"> 
+                  <img class="aside-menu__call-image" src="icons/chat copy.svg" alt="заказать звонок">
+               </button>
             </li>
-            <li class="footer__icon-item">
-               <input class="footer__button" type="image" src="icons/chat.svg" alt="обратная связь">
+            <li class="aside-menu__footer-item">
+               <button class="aside-menu__footer-button">
+                  <img class="aside-menu__chat-image" src="icons/chat.svg" alt="обратная связь">
+               </button> 
             </li>
-            <li class="footer__icon-item">
-               <input class="footer__button" type="image" src="icons/profile.svg" alt="личный кабинет">
+            <li class="aside-menu__footer-item">
+               <button class="aside-menu__footer-button">
+                  <img class="aside-menu__profile-image" src="icons/profile.svg" alt="личный кабинет"> 
+               </button>  
             </li>
          </ul>
-         <div class="footer__contacts">
-            <a class="footer__mail" href="#">mail@cps.com</a>
-            <a class="footer__phone-number" href="#">8 800 890 8900</a>
+         <div class="aside-menu__contacts">
+            <a class="aside-menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="aside-menu__phone-number" href="tel:+78008908900">8 800 890 8900</a>
          </div>
-         <div class="footer__language">
-            <ul class="footer__language-list">
-               <li class="footer__language-item"> 
-                  <input class="footer__language-button footer__language-button--active" type="button" value="ru">
+         <div class="aside-menu__language">
+            <ul class="aside-menu__language-list">
+               <li class="aside-menu__language-item"> 
+                  <label class="aside-menu__label">
+                     <input class="aside-menu__radio" type="radio" name="language" value="ru" checked>
+                     <span class="aside-menu__text">ru</span>
+                  </label>
                </li>
-               <li class="footer__language-item">
-                  <input class="footer__language-button" type="button" value="en">
+               <li class="aside-menu__language-item">
+                  <label class="aside-menu__label">
+                     <input class="aside-menu__radio" type="radio" name="language" value="en">
+                     <span class="aside-menu__text">en</span>
+                  </label>
                </li>
-               <li class="footer__language-item">
-                  <input class="footer__language-button" type="button" value="ch">
+               <li class="aside-menu__language-item">
+                  <label class="aside-menu__label">
+                     <input class="aside-menu__radio" type="radio" name="language" value="ch">
+                     <span class="aside-menu__text">ch</span>
+                  </label>
                </li>
             </ul>
          </div>
-      </footer>
+      </div>
+   </aside>
    </body>
 </html>
